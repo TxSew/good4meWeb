@@ -1,0 +1,179 @@
+$color__primary : rgba(250, 84, 28, 1);
+$text__dark : rgba(61, 55, 55, 1);
+$danger__primary : rgba(255, 241, 240, 1);
+ $text_white: rgba(255, 255, 255, 1);
+  $text_gray:rgba(133, 133, 138, 1);
+  $color__gray-2: rgba(238, 238, 238, 1);
+   $green_color: rgba(56, 158, 13, 1);
+
+
+   @font-face {
+    font-family: Gilroy;
+    src: url('src/assets/fonts/Gilroy/Gilroy-Regular.ttf');
+  }
+   .container_fluid {
+    max-width: 1300px; 
+    padding: 0 10px;
+   margin: 0 auto; 
+ }
+ .container {
+    max-width: 1140px;
+     padding: 0 10px;
+    margin: 0 auto;
+ }
+ .active {
+   
+   transform: translateX(1px) !important;
+     opacity: 1 !important;
+     visibility: visible !important;
+ }
+.hide {
+    transform: translateX(-100px) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html , body {
+     font-family: 'Gilroy';
+  }
+  img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+  input,
+  select,
+  textarea {
+    background-color: transparent;
+    outline: none;
+  }
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+  }
+  body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  
+
+
+  .btn__addcard {
+    display: inline-block;
+    background-color: $color__primary;
+    padding: 4px 16px;
+    width: max-content;
+    text-decoration: none;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    gap: 0px 8px;
+    //styleName: Body/Body2-16px-Regular;
+    & > img {
+    }
+    & > span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $text_white;
+    }
+  }
+  //    see more
+  .see_more_wrapper {
+    width: 100%;
+    text-align: center;
+    .container {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 0.555px;
+        width: 40%;
+        background-color: $color__primary;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        height: 0.555px;
+        width: 40%;
+        background-color: $color__primary;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .see__more {
+      display: inline-block;
+      width: max-content;
+      text-transform: capitalize;
+      //styleName: Body/Body2-16px-Regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      padding: 8px 16px;
+      text-decoration: none;
+      border: 1px solid $color__primary;
+      border-radius: 4px;
+      color: $color__primary;
+         cursor: pointer;
+    }
+  }
+  
+  .btn_sortPage {
+    display: flex;
+     justify-content: center;
+    gap: 8px;
+    .next,
+    .prev {
+      background-color: rgba(238, 238, 238, 1);
+        img {
+         width: 3.9px;
+         height: 7.29px;
+         object-fit: contain;
+       }
+    }
+    & > button {
+       width: 30px;
+        height: 30px;
+         display: flex;
+          justify-content: center;
+           align-items: center;
+            border-radius: 3px;
+      & > a {
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(61, 55, 55, 1);
+      }
+    }
+  }
+  // @mixin btn_card($w:'21.33px', $h:'18.77px', $bg) {
+  //    width: 32px;
+  //    height: 32px;
+  //     background-color: $bg;
+  //     &> img {
+  //        width: $w;
+  //         height: $h;
+  //     }
+  // }
+  

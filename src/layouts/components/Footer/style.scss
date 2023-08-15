@@ -1,0 +1,95 @@
+$color__primary : rgba(250, 84, 28, 1);
+$text__dark : rgba(61, 55, 55, 1);
+$danger__primary : rgba(255, 241, 240, 1);
+ $text_white: rgba(255, 255, 255, 1);
+ $text_gray:rgba(133, 133, 138, 1);
+ $color__gray-2: rgba(238, 238, 238, 1);
+ $green_color: rgba(56, 158, 13, 1);
+
+
+
+.footer {
+    margin-top: 51px;
+  padding-top: 24px;
+  background-color: $danger__primary;
+  &_wrapper {
+    display: flex;
+     padding-bottom: 32px;
+      border-bottom: 1px solid rgb(218, 212, 212);
+  }
+  &__col:first-child {
+    max-width: 424.25px;
+    .footer_logo {
+      max-width: 239.45px;
+      height: 48.73px;
+      margin-left: 10px;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .footer__col-desc {
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+  .more-info {
+    margin-left: 40px;
+    & > p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+    .footer__moreInfo {
+      margin-top: 16px;
+      & > ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        list-style: none;
+        & > li > a {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $text__dark;
+           text-decoration: none;
+        }
+      }
+    }
+  }
+  .about-us {
+    max-width: 424.25px;
+    width: 100%;
+  }
+  &_bottom {
+     padding-top: 36.5px;
+      padding-bottom: 59.6px;
+       padding-left: 20px;
+     display: flex;
+      align-items: center;
+       &-icon {
+         display: flex;
+          align-items: center;
+          gap:19.52px
+       }
+        &> p {
+             margin-left: auto;
+              padding-right: 66.25px;
+               & > span {
+                 color: $color__primary;
+               }
+        }
+         &-pay {
+           margin-left: auto;
+         }
+  }
+}

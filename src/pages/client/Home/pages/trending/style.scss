@@ -1,0 +1,53 @@
+$color__primary : rgba(250, 84, 28, 1);
+$text__dark : rgba(61, 55, 55, 1);
+$danger__primary : rgba(255, 241, 240, 1);
+ $text_white: rgba(255, 255, 255, 1);
+  $text_gray:rgba(133, 133, 138, 1);
+  $color__gray-2: rgba(238, 238, 238, 1);
+   $green_color: rgba(56, 158, 13, 1);
+
+.trending {
+    background-color: $danger__primary;
+    &__wrapper {
+      display: flex;
+      align-items: center;
+       justify-content: space-between;
+    }
+    &_content {
+      padding: 153.98px 0px;
+      max-width: 648px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+    &_heading {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.01em;
+      text-align: left;
+      color: $color__primary;
+    }
+    &_desc {
+      //styleName: Body/Body1-24px-regular;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: calc(41 / 24);
+      letter-spacing: 0.01em;
+      text-align: left;
+      color: rgba(61, 55, 55, 1);
+    }
+    &_title {
+      display: flex;
+      align-items: center;
+      //styleName: Heading/H3-24px-medium;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      text-align: left;
+       gap:18px
+    }
+   
+  }
+  

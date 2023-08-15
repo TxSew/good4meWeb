@@ -1,0 +1,56 @@
+$color__primary : rgba(250, 84, 28, 1);
+$text__dark : rgba(61, 55, 55, 1);
+$danger__primary : rgba(255, 241, 240, 1);
+ $text_white: rgba(255, 255, 255, 1);
+  $text_gray:rgba(133, 133, 138, 1);
+  $color__gray-2: rgba(238, 238, 238, 1);
+   $green_color: rgba(56, 158, 13, 1);
+
+
+
+.main_login {
+    width: 100%; 
+}
+.login_wrapper {
+    max-width: 400px;
+     padding-top: 70px;
+      padding-bottom: 30px;
+    margin: 0 auto;
+}
+.login__heading { 
+    text-align: center;
+     font-size: 30px;
+ }
+  .form__control {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+      &> input {
+        border:  1px solid #ccc;
+        padding: 5px 20px;
+        border-radius: 4px;
+    }
+  }
+   .form__groups , .login__groups {
+        & button[type="submit"] {
+            background-color: $color__primary;
+            color: white;
+            padding: 6px;
+            margin-top: 16px;
+            width: 100%;
+            cursor: pointer;
+             display: block;
+        }
+         
+   }
+
+.error {
+  color: red;
+} 
+.success {
+  color : green;
+}
+.form-control.error {
+   border-bottom-color: #e74c3c;
+}

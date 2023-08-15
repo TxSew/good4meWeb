@@ -1,0 +1,216 @@
+$color__primary : rgba(250, 84, 28, 1);
+$text__dark : rgba(61, 55, 55, 1);
+$danger__primary : rgba(255, 241, 240, 1);
+ $text_white: rgba(255, 255, 255, 1);
+  $text_gray:rgba(133, 133, 138, 1);
+  $color__gray-2: rgba(238, 238, 238, 1);
+   $green_color: rgba(56, 158, 13, 1);
+
+.main_mycard {
+    background: #fafafa;
+  }
+  .mycard {
+    padding-top: 40.8px;
+    &_items {
+    }
+    &_infomation {
+      flex: 1;
+      background-color: #fff;
+      margin-top: 16px;
+    }
+    &_heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+      & > span {
+        color: $color__primary;
+      }
+    }
+    // my card infomation
+    &_infomation {
+      padding: 16px;
+      & > a {
+        //styleName: H3-4 20px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        width: 100%;
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color__primary;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 16px;
+        border-radius: 3px;
+      }
+      .note_infomation {
+        display: flex;
+        padding-top: 23px;
+        flex-direction: column;
+        & > span {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        & > textarea {
+          margin-top: 16px;
+          border: 1px solid #eee;
+          resize: none;
+        }
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #eee;
+        .total_amount {
+          padding-top: 16px;
+          display: flex;
+          justify-content: space-between;
+          &:last-child {
+            & > span:last-child {
+              color: $color__primary;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 19px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+          & > span.key_total_amount {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(61, 55, 55, 1);
+          }
+        }
+      }
+      & > h3 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: rgba(61, 55, 55, 1);
+        padding-bottom: 16px;
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+      }
+    }
+    &_price {
+      font-size: 16px;
+      color: rgba(61, 55, 55, 1);
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    &_count {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      .prev_mycard {
+        background-color: #ccc;
+        color: black;
+      }
+      .next_mycard {
+        background-color: black;
+        color: #fff;
+      }
+      & > button {
+        width: 24px;
+        height: 24px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &_wrapper {
+      width: 100%;
+      margin-top: 16px;
+      display: flex;
+      gap: 0px 32px;
+    }
+    &-item {
+      background-color: #fff;
+      width: 100%;
+      margin-top: 16px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 0px 79px;
+      &-checked {
+        display: flex;
+        align-items: center;
+        
+        & > input {
+          width: 24px;
+          height: 24px;
+          border-radius: 6px;
+        }
+      }
+  
+      &-thumb {
+        
+         position: relative;
+         display: flex;
+         align-items: center;
+         margin-left: 18px;
+       
+         
+        
+        & > img {
+          width: 75px;
+          height: 75px;
+          object-fit: cover;
+        }
+        &-content {
+          margin-left: 16px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          & > span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(133, 133, 138, 1);
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  input[type="checkbox"]  {
+    // display: none;
+     
+  }
+  
+  input[type="checkbox"]:checked  + .mycard-item-thumb::after {
+        
+    opacity: 1;
+     display: block;
+  }

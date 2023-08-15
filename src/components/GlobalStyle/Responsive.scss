@@ -1,0 +1,155 @@
+@media screen and (max-width: "1367px") {
+    .container {
+      max-width: 975px;
+    }
+    .container_fluid {
+      max-width: 995px;
+    }
+    .footer__col:first-child {
+      max-width: 311.25px;
+    }
+    .footer .about-us {
+      max-width: 311.25px;
+    }
+  }
+  @media screen and (max-width: "1023px") {
+    .container {
+      max-width: 830px;
+    }
+    .fashion_thumbs {
+      display: block;
+    }
+    .fashion_thumb,
+    .apple .box_cards .box_card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .apple .box_cards .box_card-content {
+      flex: 1;
+    }
+    .header__top {
+      display: none;
+    }
+    .header__bottom-nav > ul {
+      display: none;
+    }
+    .apple .box_cards {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: "820px") {
+    .footer_wrapper {
+      display: block;
+    }
+    .coppyright {
+      display: none;
+    }
+    .trending__wrapper {
+      display: block;
+    }
+    .header__bottom-input {
+      display: none;
+    }
+    .fashion_thumb_image {
+      position: absolute;
+      max-width: 151px;
+      max-height: 219px;
+      bottom: 14%;
+      right: 1px;
+    }
+    .see_more_wrapper .container::before {
+      position: absolute;
+      content: "";
+      height: 0.555px;
+      width: 30%;
+      background-color: #fa541c;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .see_more_wrapper .container::after {
+      position: absolute;
+      content: "";
+      height: 0.555px;
+      width: 30%;
+      background-color: #fa541c;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .footer .more-info {
+      margin-top: 30px;
+    }
+    .trending_desc,
+    .trending_title {
+      font-size: 18px;
+    }
+    .trending_content {
+      padding: 73px 0px;
+    }
+    .apple .box_cards .box_card-content {
+      padding: 10px 0px 8px 10px;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px 0px;
+    }
+    .apple .box_cards .box_card-image {
+      max-width: 245px;
+      height: 216px;
+    }
+    .apple .box_cards .box_card-circle {
+      padding: 5.75px;
+    }
+    .footer {
+      margin-top: 36px;
+      padding-top: 24px;
+      background-color: #fff1f0;
+    }
+    .footer_bottom-pay {
+  
+           
+      margin-left: auto;
+      width: 200px;
+      & > img {
+           height: 30px;
+           
+       }
+  
+  }
+  
+    //  my card
+    .mycard_wrapper {
+      display: block;
+    }
+    .mycard_priceTotal,
+    .mycard_priceTotal,
+    .mycard_count,
+    .mycard_price {
+      display: none;
+    }
+    
+    .trending__image > img {
+      margin: 0 auto;
+    }
+    .fashion_thumb {
+      padding: 24px;
+    }
+    .mycard_remove{
+       margin-left: auto;
+    }
+    .category_wrapper {
+       position: relative;
+    }
+    .category_navbar {
+      display: none;
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      padding: 0;
+      height: 100%;
+  }
+  
+  }
+  

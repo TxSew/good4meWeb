@@ -39,9 +39,9 @@ const Register = () => {
   });
   const onSubmit = (data: RegisterForm) => {
     console.log(data);
-    const local = localStorage.getItem("account");
+    const local = localStorage.getItem("account") as string;
+    const arrs = JSON.parse(local) ?? [];
     if (local) {
-      const arrs = JSON.parse(local) ?? [];
       if (arrs.length > 0) {
         arrs.forEach((element: { email: string }) => {
           if (element.email.includes(data.email)) {
@@ -49,7 +49,8 @@ const Register = () => {
               position: "bottom-right",
             });
             return;
-          } else {
+          } 
+          else {
             arrs.push(data);
             localStorage.setItem("account", JSON.stringify(arrs));
             toast.success("Register account successfully", {

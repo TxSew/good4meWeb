@@ -60,6 +60,11 @@ const Login = () => {
                  })
              }
      }
+      else {
+        toast.error("email and password not find!", {
+          position: "bottom-right"
+        })
+      }
   };
   // firstName and lastName will have correct type
   return (

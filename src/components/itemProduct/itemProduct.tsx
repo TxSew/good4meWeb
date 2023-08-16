@@ -1,15 +1,21 @@
 import React from 'react'
-interface ItemProductProps {
-  name: string;
-  desc: string;
-  remaining: string;
-  price: string;
-  productId: string
+import ItemProductProps from '../../models/Product/ItemProductProps';
+ 
+
+
+interface ProductItem  {
+   products: ItemProductProps,
+  handleCart: (productId: number) => void;
 }
-const ItemProduct:React.FC<ItemProductProps> = ({price , name , remaining, desc, productId ="34"}) => {
-     function handleCart(id: string) {
-        console.log(id);
-     }
+ 
+const ItemProduct:React.FC<ProductItem> = ({products = {
+  name: '44',
+  desc: 'djd',
+  remaining: 'sjsjsj',
+  price: 333,
+  productId: 0
+} , handleCart}) => {
+  
   return (
  <div className="box_card">
             <div className="box_card-image">
@@ -18,12 +24,11 @@ const ItemProduct:React.FC<ItemProductProps> = ({price , name , remaining, desc,
             {/* <!-- box content --> */}
             <div className="box_card-content">
               <div className="box_card-name">
-                <span>{name}</span>
+                <span>{products.name}</span>
                 <a href="" className="status_card">Available</a>
               </div>
-               {productId}
               <p className="box_card-desc">
-                 {desc}
+                 {products.desc}
               </p>
               <div className="box_card-color">
                 <span>Colors:</span>
@@ -36,11 +41,11 @@ const ItemProduct:React.FC<ItemProductProps> = ({price , name , remaining, desc,
               </div>
               <div className="box_card-remaining">
                 <span className="box_card-remaining-name">Remaining:</span>
-                <span>{remaining}</span>
+                <span>{products.remaining}</span>
               </div>
               <div className="box_card-price">
-                <span>${price}</span>
-                <button onClick={() => handleCart(productId)}>
+                <span>${products.price}</span>
+                <button onClick={() => handleCart(products.productId)}>
                   <img src="src/assets/images/Shape.png" alt="" />
                 </button>
               </div>

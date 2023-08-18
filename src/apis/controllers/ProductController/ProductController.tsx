@@ -2,9 +2,9 @@ import AxiosClient from "../../AxiosClient";
 import Product from "../../models/ProductModel/ProductModel";
 class ProductApi {
 	//axios getAll
-	getAll(params:number) {
+	getAll() {
 		const url = "/products";
-		return AxiosClient.get(url, { params });
+		return AxiosClient.get(url);
 	}
 	// axios getOne
 	get(id: number) {

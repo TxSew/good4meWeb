@@ -26,6 +26,13 @@ const PublicRouter = [
    path: "/cart",
    element: Cart,
  },
+  
 ];
+ const PrivateRouter = [
+   {
+     path:'/admin',
+      element: <p>Admin</p>
+   }
+ ]
 
-export { PublicRouter };
+export { PublicRouter ,PrivateRouter};

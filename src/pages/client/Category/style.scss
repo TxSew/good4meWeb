@@ -160,3 +160,29 @@ $danger__primary : rgba(255, 241, 240, 1);
    }
   }
   
+
+
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+     list-style: none;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+     display: inline-block;
+  }
+  
+  .pagination .active {
+     list-style: none;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+  }
+  
